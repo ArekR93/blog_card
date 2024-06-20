@@ -1,0 +1,56 @@
+$mainColor: hsl(47, 88%, 63%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    background-color: $mainColor;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    .card-body{
+        background-color: $white;
+        padding: 1em;
+        width: 100%;
+        border-radius: 15px;
+        border: 1px solid $black;
+        box-shadow: 5px 5px 5px $black;
+        .card-header{
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+        .text{
+            display: inline-block;
+            margin: 1em 0;
+            padding: .5em .5em;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: $mainColor;
+        }
+        h1{
+            font-size: 1.3rem;
+            font-weight: 900;
+            margin: 1em 0;
+        }
+        .desc-text{
+            color: $black;
+            line-height: 1.5em;
+        }
+    }
+}
